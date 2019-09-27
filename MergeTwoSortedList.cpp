@@ -37,9 +37,7 @@ public:
 
         if (l1){
             cur->next = l1;
-        }
-
-        if (l2){
+        }else{
             cur->next = l2;
         }
 
