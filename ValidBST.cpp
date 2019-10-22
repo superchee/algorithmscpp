@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include <algorithms>
+//#include <algorithms>
 #include <stack>
 
 using namespace std;
@@ -19,10 +19,10 @@ class Solution {
 public:
     bool isValidBST(TreeNode* root) {
         stack<TreeNode*> s;
-        TreeNode* cur = root, pre(NULL);
+        TreeNode* cur = root, *pre(NULL);
         while (cur || !s.empty()){
             if(cur){
-                s.push_back(cur);
+                s.push(cur);
                 cur = cur->left;
             }else{
                 cur = s.top();
